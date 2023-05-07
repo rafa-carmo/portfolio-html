@@ -1,0 +1,50 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 7%;
+    display: flex;
+    align-items:center;
+    z-index: 10;
+    transition: .5s;
+}
+
+
+/* Success Page */
+.success {
+    display: grid;
+    height: 100vh;
+    place-items: center;
+}
+
+.success .success-container .success-box {
+    flex: 1 1 30rem;
+    background: var(--bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    box-shadow: 0 .1rem .5rem var(--shadow-color);
+    border-top: .6rem solid var(--main-color);
+    border-bottom: .6rem solid var(--main-color);
+    transition: .3s;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.success .success-container .success-box:hover {
+    box-shadow: 0 .1rem 2rem var(--shadow-color);
+    transform: scale(1.02);
+}
+
+
+
+.success .message-box {
+    max-width: 50rem;
+    border-radius: 1rem;
+    padding: 5rem;
+    text-align: center;
+    background: var(--main-color);
+}
+
